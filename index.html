@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Início</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Bem-vindo(a)! 👋</h1>
+    <p>Esta é uma aplicação de demonstração de autenticação com sessions no Flask.</p>
+    <a class="btn" href="{{ url_for('login') }}">Ir para o Login</a>
+  </div>
+</body>
+</html>
+ 

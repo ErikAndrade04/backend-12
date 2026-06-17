@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Área Restrita</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Área Restrita</h1>
+    <p>Você está logado como:</p>
+    <span class="user-badge">{{ usuario }}</span>
+    <p>Esta página só pode ser vista por quem fez login com sucesso.</p>
+    <a class="btn btn-logout" href="{{ url_for('logout') }}">Sair (Logout)</a>
+  </div>
+</body>
+</html>
+ 
